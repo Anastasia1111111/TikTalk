@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@use "app/fonts.scss";
+
+:root {
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --primary-color: #ae7aff;
+}
+
+body {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.skill-tag {
+  padding: 4px 8px;
+  border-radius: 2px;
+  border: 1px solid var(--light-color);
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+  line-height: 24px;
+  font-family: "JetBrains Mono";
+}
+
+.skill-tag__primary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn {
+  border: none;
+  font-family: "JetBrains Mono";
+  background: var(--primary-color);
+  color: var(--dark-color);
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+}
