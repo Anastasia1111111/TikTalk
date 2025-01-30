@@ -1,3 +1,5 @@
-<app-profile-card></app-profile-card>
-<!-- <pre>{{ profiles | json }}</pre> -->
-<router-outlet></router-outlet>
+<div class="profile-card__wraper">
+  @for(profile of profiles; track profile.id){
+  <app-profile-card [profile]="profile"></app-profile-card>
+  }
+</div>
